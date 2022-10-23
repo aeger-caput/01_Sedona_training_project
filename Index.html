@@ -10,27 +10,29 @@
 
 <body>
     <header class="main-page-header">
-        <nav class="navigation">
-            <a href="index.html" class="navigation-logo">
-                <img src="img/logo.png" alt="Логотип Седона" class="main-page-header__logo">
-            </a>
-            <ul class="main-page-headerlist">
-                <li class="main-page-header__navigation-item">
-                    <a href="index.html" class="main-page-header__navigation-link">
-                        Главная
-                    </a>
-                </li>
-                <li class="main-page-header__navigation-item">
-                    <a href="about.html" class="main-page-header__navigation-link">
-                        О Седоне
-                    </a>
-                </li>
-                <li class="main-page-header__navigation-item">
-                    <a href="catalog.html" class="main-page-header__navigation-link">
-                        Гостиницы
-                    </a>
-                </li>
-            </ul>
+        <div class="wrapper">
+            <nav class="navigation">
+                <a href="index.html" class="navigation-logo">
+                    <img src="img/logo.png" alt="Логотип Седона" class="main-page-header__logo">
+                </a>
+                <ul class="main-page-headerlist">
+                    <li class="main-page-header__navigation-item">
+                        <a href="index.html" class="main-page-header__navigation-link navigation-link-current">
+                            Главная
+                        </a>
+                    </li>
+                    <li class="main-page-header__navigation-item">
+                        <a href="#" class="main-page-header__navigation-link">
+                            О Седоне
+                        </a>
+                    </li>
+                    <li class="main-page-header__navigation-item">
+                        <a href="catalog.html" class="main-page-header__navigation-link">
+                            Гостиницы
+                        </a>
+                    </li>
+                </ul>
+            </nav>
             <ul class="main-page-header__navigation-list navigation-user">
                 <li class="main-page-header__navigation-item">
                     <a href="#" class="main-page-header__navigation-link">
@@ -39,17 +41,18 @@
                 </li>
                 <li class="main-page-header__navigation-item">
                     <a href="#" class="main-page-header__navigation-link">
-                        <span class="visually-hidden">Добавить в избранное</span>
+                        <span class="visually-hidden">Перейти в избранное</span>
+                        <span class="main-page-header__likes-number">12</span>
                     </a>
-                    <!--Добавить кол-во лайков!............................................................................-->
+                    <!--Добавить кол-во лайков!-->
                 </li>
                 <li class="main-page-header__navigation-item">
-                    <a href="#" class="main-page-header__navigation-link">
-                        <span class="">Хочу сюда</span>
+                    <a href="#" class="main-page-header__navigation-link brown-button">
+                        <span class="main-page-header__button-inscription">Хочу сюда</span>
                     </a>
                 </li>
             </ul>
-        </nav>
+        </div>
     </header>
     <script src="js/script.js"></script>
 </body>
