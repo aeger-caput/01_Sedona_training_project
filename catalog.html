@@ -160,24 +160,105 @@
          </form>
       </section>
 
-      <section class="sorting-section">
-         <form action="https://echo.htmlacademy.ru/" class="sorting-section__form">
-            <label class="sorting-section__label" for="sorting">
-               Найдено страниц: <span class="sorting-section__label-number">38</span>
+      <section class="search-results">
+         <h2 class="visually-hidden search-results__title"></h2>
+
+         <form action="https://echo.htmlacademy.ru/" class="sorting__form">
+            <label class="sorting__label" for="sorting">
+               Найдено страниц: <span class="sorting__label-number">38</span>
             </label>
-            <select class="sorting-section__select" name="sorting" id="sorting">
+            <select class="sorting__select" name="sorting" id="sorting">
                <option value="popular">Сначала популярное</option>
                <option value="cleap">Сначала дешевое</option>
                <option value="expensive">Сначала дорогое</option>
             </select>
             <button type="submit" class="visually-hidden">Сортировать</button>
          </form>
-         <a class="button button-light" href="#">
-            <span class="visually-hidden">Показать список</span>
+         <a class="sorting__button sorting__but-select" href="#">
+            <span class="visually-hidden">Показать карточками</span>
          </a>
-         <a class="button button-light" href="#">
-            <span class="visually-hidden">Показать карточки</span>
+         <a class="sorting__button" href="#">
+            <span class="visually-hidden">Показать списком</span>
          </a>
+         <a class="sorting__button" href="#">
+            <span class="visually-hidden">Показать Слайдами</span>
+         </a>
+
+         <ul class="search-results__list">
+            <li class="search-results__item">
+               <img src="" alt="" class="search-results__image">
+               <h3 class="search-results__card-title">Amara Resort & Spa</h3>
+               <p class="search-results__hotel-type">Гостиница</p>
+               <p class="search-results__hotel-price">От 4000 ₽</p>
+               <a href="#" class="search-results__button-card brown-button">Подробнее</a>
+               <a href="#" class="search-results__button-card cold-button">В избранное</a>
+               <p class="search-results__stars"><span class="visually-hidden">4 звезды</span></p>
+               <p class="search-results__rating">рейтинг: 8,5</p>
+            </li>
+            <li class="search-results__item">
+               <img src="" alt="" class="search-results__image">
+               <h3 class="search-results__card-title">Desert Quail Inn</h3>
+               <p class="search-results__hotel-type">Гостиница</p>
+               <p class="search-results__hotel-price">От 3000 ₽</p>
+               <a href="#" class="search-results__button-card brown-button">Подробнее</a>
+               <a href="#" class="search-results__button-card cold-button">В избранное</a>
+               <p class="search-results__stars"><span class="visually-hidden">2 звезды</span></p>
+               <p class="search-results__rating">рейтинг: 8,9</p>
+            </li>
+            <li class="search-results__item">
+               <img src="" alt="" class="search-results__image">
+               <h3 class="search-results__card-title">Villas at Poco Diablo</h3>
+               <p class="search-results__hotel-type">Гостиница</p>
+               <p class="search-results__hotel-price">От 2000 ₽</p>
+               <a href="#" class="search-results__button-card brown-button">Подробнее</a>
+               <a href="#" class="search-results__button-card green-button">В избранном</a>
+               <p class="search-results__stars"><span class="visually-hidden">2 звезды</span></p>
+               <p class="search-results__rating">рейтинг: 9,2</p>
+            </li>
+            <li class="search-results__item">
+               <img src="" alt="" class="search-results__image">
+               <h3 class="search-results__card-title">GreenTree Inn</h3>
+               <p class="search-results__hotel-type">Гостиница</p>
+               <p class="search-results__hotel-price">От 3000 ₽</p>
+               <a href="#" class="search-results__button-card brown-button">Подробнее</a>
+               <a href="#" class="search-results__button-card cold-button">В избранное</a>
+               <p class="search-results__stars"><span class="visually-hidden">2 звезды</span></p>
+               <p class="search-results__rating">рейтинг: 9,2</p>
+            </li>
+         </ul>
+
+         <button class="search-results__button cold-button" type="button">Загрузить ещё</button>
+      </section>
+
+      <section class="pagonation-section">
+         <h2 class="visually-hidden pagonation-section__title">Список страниц</h2>
+         <ul class="pagonation">
+            <li class="pagonation-item">
+               <a class="pagonation-link pagonation-disabled">1</a>
+            </li>
+            <li class="pagonation-item">
+               <a href="#" class="pagonation-link cold-button">2</a>
+            </li>
+            <li class="pagonation-item">
+               <a href="#" class="pagonation-link cold-button">3</a>
+            </li>
+            <li class="pagonation-item">
+               <a href="#" class="pagonation-link cold-button">4</a>
+            </li>
+            <li class="pagonation-item">
+               <a href="#" class="pagonation-link cold-button">...</a>
+            </li>
+            <li class="pagonation-item">
+               <a href="#" class="pagonation-link cold-button">10</a>
+            </li>
+         </ul>
+         <form action="" class="pagonation-section__form">
+            <label class="pagonation-section__label" for="pagonation-section-select">Гостиниц на странице:</label>
+            <select class="pagonation-section__select" name="pagonation-section-select" id="pagonation-section-select">
+               <option value="4">4</option>
+               <option value="6">6</option>
+            </select>
+         </form>
       </section>
 
       <section class="newsletter">
