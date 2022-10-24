@@ -13,7 +13,7 @@
       <div class="wrapper">
          <nav class="navigation">
             <a href="index.html" class="navigation-logo">
-               <img src="img/logo.png" alt="Логотип Седона" class="page-header__logo">
+               <img src="" alt="Седона" class="page-header__logo">
             </a>
             <ul class="page-headerlist">
                <li class="page-header__navigation-item">
@@ -120,8 +120,8 @@
                         <span class="contol-mark"></span>
                         <span class="control-label">Мотель</span>
                      </label>
-                  </li class="catalog-filter__group-item">
-                  <li>
+                  </li>
+                  <li class="catalog-filter__group-item">
                      <label class="control">
                         <input class="visually-hidden control-input" type="radio" name="product-group"
                            value="apartments">
@@ -161,12 +161,13 @@
       </section>
 
       <section class="search-results">
-         <h2 class="visually-hidden search-results__title"></h2>
+         <h2 class="visually-hidden search-results__title">Результаты поиска</h2>
 
          <form action="https://echo.htmlacademy.ru/" class="sorting__form">
-            <label class="sorting__label" for="sorting">
-               Найдено страниц: <span class="sorting__label-number">38</span>
-            </label>
+            <p class="sorting__text">
+               Найдено страниц: <span class="sorting__number">38</span>
+            </p>
+            <label class="visually-hidden" for="sorting">Сортировка</label>
             <select class="sorting__select" name="sorting" id="sorting">
                <option value="popular">Сначала популярное</option>
                <option value="cleap">Сначала дешевое</option>
@@ -252,7 +253,7 @@
                <a href="#" class="pagonation-link cold-button">10</a>
             </li>
          </ul>
-         <form action="" class="pagonation-section__form">
+         <form action="https://echo.htmlacademy.ru/" class="pagonation-section__form">
             <label class="pagonation-section__label" for="pagonation-section-select">Гостиниц на странице:</label>
             <select class="pagonation-section__select" name="pagonation-section-select" id="pagonation-section-select">
                <option value="4">4</option>
@@ -265,7 +266,9 @@
          <h2 class="newsletter__title">Подпишитесь на рассылку</h2>
          <p class="newsletter__text">Только полезная информация и никакого спама, честное бойскаутское!</p>
          <form class="newsletter__form" action="https://echo.htmlacademy.ru/" method="post" name="newsletter-form">
-            <input class="newsletter__email" type="email" name="newsletter-email" placeholder="Ваш e-mail">
+            <label class="visually-hidden" for="newsletter-email">Ваш e-mail:</label>
+            <input class="newsletter__email" type="email" name="newsletter-email" id="newsletter-email"
+               placeholder="Ваш e-mail">
             <button class="newsletter__button cold-button" type="submit">
                <span class="newsletter__button-text">Подписаться</span>
             </button>
@@ -294,11 +297,11 @@
             </li>
          </ul>
       </section>
-      <p class="page-footer__phone-number">
-         +7 (812) 812-12-12
-      </p>
+      <a href="#" class="page-footer__phone-number">
+         <p>+7 (812) 812-12-12</p>
+      </a>
       <a href="https://htmlacademy.ru/" class="page-footer__logo">
-         <img src="img/logo_htmlacademy.png" alt="HTML Академия" class="page-footer__logo-image">
+         <img src="" alt="HTML Академия" class="page-footer__logo-image">
       </a>
    </footer>
 
