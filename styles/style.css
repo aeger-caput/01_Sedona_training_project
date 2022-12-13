@@ -1,3 +1,13 @@
 body {
   background-color: #4c7987;
 }
+
+.newsletter {
+  background-image: url(/img/newsletter-background.jpg);
+  background-repeat: no-repeat;
+}
+
+.catalog-filter {
+  background-image: url(/img/catalog-background.jpg);
+  background-repeat: no-repeat;
+}
