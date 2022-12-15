@@ -1,15 +1,481 @@
 //@import "nullstyle.scss";
 
+@font-face {
+   font-family: "PT Sans";
+   font-style: normal;
+   font-weight: 400;
+   src: url("/fonts/PTSans-Regular.woff2") format("woff2");
+   font-display: swap;
+}
+
+@font-face {
+   font-family: "PT Sans";
+   font-style: normal;
+   font-weight: 700;
+   src: url("/fonts/PTSans-Bold.woff2") format("woff2");
+   font-display: swap;
+}
+
 body {
-   background-color: #4c7987;
+   font-family: 'PT Sans', sans-serif;
+   font-size: 20px;
+   line-height: 26px;
+   color: #000000;
+   background-color: #ffffff;
+}
+
+.page-headerlist {
+   list-style: none;
+}
+
+.page-header {
+
+   &__logo {
+   }
+
+   &__navigation-item {
+   }
+
+   &__navigation-link {
+      font-weight: 700;
+      color: #000000;
+      text-decoration: none;
+   }
+
+   &__navigation-list {
+      list-style: none;
+   }
+
+   &__likes-number {
+      background-color: #7DB54F;
+      color: #ffffff;
+   }
+
+   &__button-inscription {
+   }
+}
+.wrapper {
+   margin: 0 auto;
+   width: 1240px;
+}
+
+.navigation {
+}
+
+.navigation-logo {
+}
+
+.navigation-link-current {
+}
+
+.navigation-user {
+}
+
+.visually-hidden {
+}
+
+.brown-button {
+   font-size: 16px;
+   line-height: 20px;
+   text-transform: uppercase;
+   background-color: #756257;
+   color: #ffffff;
+}
+
+.main-index {
+
+   &__title {
+   }
+}
+
+.welcome-banner {
+
+   &__title {
+   }
+
+   &__image-text {
+   }
+
+   &__strong-text {
+      font-size: 30px;
+      line-height: 36px;
+      font-weight: 700;
+      text-transform: uppercase;
+   }
+
+   &__text {
+      font-size: 22px;
+      line-height: 36px;
+      color: #333333;
+   }
+}
+
+.advantages {
+
+   &__title {
+   }
+
+   &__list {
+      list-style: none;
+      .advantages__card:nth-child(odd) {
+         background-color: rgba(131, 179, 211, 0.12);
+      }
+      .advantages__card:nth-child(4) {
+         background-color: rgba(131, 179, 211, 0.2);
+      }
+   }
+
+   &__card {
+      
+   }
+
+   &__card-title {
+      font-size: 24px;
+      line-height: 28px;
+      text-transform: uppercase;
+      font-weight: 700;
+   }
+
+   &__card-text {
+      font-size: 24px;
+      line-height: 28px;
+      color: #333333;
+   }
+
+   &__image {
+   }
+
+   &__items {
+      .advantages__card:nth-child(odd) {
+         background-color: rgba(131, 179, 211, 0.12);
+      }
+   }
+}
+
+.cold-light-card {
+   background-color: #83B3D3;
+   h3, p {
+      color: #ffffff;
+   }
+}
+
+.search-section {
+
+   &__title {
+   }
+
+   &__strong-text {
+      font-size: 30px;
+      line-height: 36px;
+      font-weight: 700;
+      text-transform: uppercase;
+   }
+
+   &__text {
+      font-size: 22px;
+      color: #333333;
+   }
+
+   &__button {
+      text-decoration: none;
+   }
+
+   &__button-text {
+      font-size: 20px;
+      line-height: 36px;
+      text-transform: uppercase;
+   }
 }
 
 .newsletter {
    background-image: url(/img/newsletter-background.jpg);
    background-repeat: no-repeat;
+   color: #ffffff;
+
+   &__title {
+      font-size: 30px;
+      line-height: 36px;
+      font-weight: 700;
+      text-transform: uppercase;
+   }
+
+   &__text {
+      color: #333333;
+   }
+
+   &__form {
+   }
+
+   &__email {
+   }
+
+   &__button {
+   }
+
+   &__button-text {
+      font-size: 20px;
+      text-transform: uppercase;
+   }
+}
+
+.cold-button {
+   background-color: #83B3D3;
+   color: #ffffff;
+}
+
+.main-catalog {
+   
+   &__title {
+      font-weight: 700;
+      font-size: 60px;
+      line-height: 78px;
+   }
+
+   &__navigation {
+   }
+
+   &__navigation-list {
+      font-size: 16px;
+      line-height: 21px;
+   }
+
+   &__navigation-item {
+   }
+
+   &__navigation-link {
+   }
+
+   &__navigation-text {
+   }
 }
 
 .catalog-filter {
    background-image: url(/img/catalog-background.jpg);
    background-repeat: no-repeat;
+   background-color: #83B3D3;
+   color: #ffffff;
+
+   &__title {
+   }
+
+   &__form {
+   }
+
+   &__group {
+   }
+
+   &__group-title {
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 26px;
+   }
+
+   &__group-list {
+   }
+
+   &__group-item {
+      font-size: 18px;
+      line-height: 23px;
+   }
+
+   &__group-label {
+   }
+
+   &__cold-button {
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 21px;
+      text-transform: uppercase;
+   }
+
+   &__button {
+      font-size: 18px;
+      line-height: 23px;
+   }
+
+   &__button-text {
+   }
 }
+
+.control {
+}
+
+.control-input {
+   font-size: 18px;
+      line-height: 23px;
+}
+
+.contol-mark {
+}
+
+.control-label {
+}
+
+.catalog-filter-list {
+}
+
+.catalog-filter-input {
+}
+
+.range-toggle {
+}
+
+.toggle-min {
+}
+
+.toggle-max {
+}
+
+.search-results {
+
+   &__title {
+   }
+
+   &__list {
+   }
+
+   &__item {
+   }
+
+   &__image {
+   }
+
+   &__card-title {
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 31px;
+   }
+
+   &__hotel-type {
+      font-size: 18px;
+      line-height: 23px;
+      color: #333333;
+   }
+
+   &__hotel-price {
+      font-size: 18px;
+      line-height: 23px;
+      color: #333333;
+   }
+
+   &__button-card {
+      font-weight: 700px;
+      font-size: 16px;
+      line-height: 21px;
+      text-transform: uppercase;
+      text-decoration: none;
+   }
+
+   &__stars {
+   }
+
+   &__rating {
+      font-size: 16px;
+      line-height: 21px;
+      color: #333333;
+   }
+
+   &__button {
+      font-weight: 700px;
+      font-size: 20px;
+      line-height: 26px;
+   }
+}
+
+.sorting {
+
+   &__form {
+   }
+
+   &__text {
+      font-weight: 700;
+      font-size: 30px;
+      line-height: 39px;
+      text-transform: uppercase;
+   }
+
+   &__number {
+   }
+
+   &__select {
+      font-size: 18px;
+      line-height: 23px;
+      color: #333333;
+   }
+
+   &__button {
+   }
+
+   &__but-select {
+   }
+}
+
+.green-button {
+}
+
+.pagonation-section {
+
+   &__title {
+   }
+
+   &__form {
+      font-size: 18px;
+      line-height: 23px;
+      color: #333333;
+   }
+
+   &__label {
+   }
+
+   &__select {
+   }
+}
+
+.pagonation {
+}
+
+.pagonation-item {
+}
+
+.pagonation-link {
+   font-weight: 700;
+   font-size: 20px;
+   line-height: 26px;
+   text-transform: uppercase;
+}
+
+.pagonation-disabled {
+}
+
+.page-footer {
+
+   &__social {
+   }
+
+   &__social-title {
+   }
+
+   &__social-list {
+   }
+
+   &__social-item {
+   }
+
+   &__social-link {
+   }
+
+   &__phone-number {
+      font-size: 40px;
+      line-height: 40px;
+      text-decoration: none;
+   }
+
+   &__logo {
+   }
+
+   &__logo-image {
+   }
+}
+
+
+

@@ -56,23 +56,23 @@
    </header>
 
    <main class="main-catalog">
-      <h1 class="main-catalog__title">Гостиницы Седоны</h1>
-      <nav class="main-catalog__navigation">
-         <ul class="main-catalog__navigation-list">
-            <li class="main-catalog__navigation-item">
-               <a href="index.html" class="main-catalog__navigation-link">
-                  <span class="visually-hidden">На главную</span>
-               </a>
-            </li>
-            <li class="main-catalog__navigation-item">
-               <a href="catalog.html" class="main-catalog__navigation-link">
-                  <span class="main-catalog__navigation-text">Гостиницы</span>
-               </a>
-            </li>
-         </ul>
-      </nav>
 
       <section class="catalog-filter">
+         <h1 class="main-catalog__title">Гостиницы Седоны</h1>
+         <nav class="main-catalog__navigation">
+            <ul class="main-catalog__navigation-list">
+               <li class="main-catalog__navigation-item">
+                  <a href="index.html" class="main-catalog__navigation-link">
+                     <span class="visually-hidden">На главную</span>
+                  </a>
+               </li>
+               <li class="main-catalog__navigation-item">
+                  <a href="catalog.html" class="main-catalog__navigation-link">
+                     <span class="main-catalog__navigation-text">Гостиницы</span>
+                  </a>
+               </li>
+            </ul>
+         </nav>
          <h2 class="visually-hidden catalog-filter__title">Фильтр каталога</h2>
          <form class="catalog-filter__form" action="https://echo.htmlacademy.ru/" method="post"
             name="catalog-filter-form">
@@ -150,7 +150,7 @@
 
             <fieldset class="catalog-filter__group">
                <legend class="visually-hidden catalog-filter__group-title">Кнопки:</legend>
-               <button class="catalog-filter__button cold-button" type="submit">
+               <button class="catalog-filter__button cold-button catalog-filter__cold-button" type="submit">
                   <span class="catalog-filter__button-text">Применить</span>
                </button>
                <button class="catalog-filter__button" type="reset">
@@ -175,15 +175,23 @@
             </select>
             <button type="submit" class="visually-hidden">Сортировать</button>
          </form>
-         <a class="sorting__button sorting__but-select" href="#">
-            <span class="visually-hidden">Показать карточками</span>
-         </a>
-         <a class="sorting__button" href="#">
-            <span class="visually-hidden">Показать списком</span>
-         </a>
-         <a class="sorting__button" href="#">
-            <span class="visually-hidden">Показать слайдами</span>
-         </a>
+         <ul>
+            <li>
+               <a class="sorting__button sorting__but-select" href="#">
+                  <span class="visually-hidden">Показать карточками</span>
+               </a>
+            </li>
+            <li>
+               <a class="sorting__button" href="#">
+                  <span class="visually-hidden">Показать списком</span>
+               </a>
+            </li>
+            <li>
+               <a class="sorting__button" href="#">
+                  <span class="visually-hidden">Показать слайдами</span>
+               </a>
+            </li>
+         </ul>
 
          <ul class="search-results__list">
             <li class="search-results__item">
@@ -194,7 +202,7 @@
                <a href="#" class="search-results__button-card brown-button">Подробнее</a>
                <a href="#" class="search-results__button-card cold-button">В избранное</a>
                <p class="search-results__stars"><span class="visually-hidden">4 звезды</span></p>
-               <p class="search-results__rating">рейтинг: 8,5</p>
+               <p class="search-results__rating">рейтинг: <span class="search-results__rating-number">8,5</span></p>
             </li>
             <li class="search-results__item">
                <img src="img/catalog/hotel-2.jpg" width="300" alt="206" alt="" class="search-results__image">
@@ -204,7 +212,7 @@
                <a href="#" class="search-results__button-card brown-button">Подробнее</a>
                <a href="#" class="search-results__button-card cold-button">В избранное</a>
                <p class="search-results__stars"><span class="visually-hidden">2 звезды</span></p>
-               <p class="search-results__rating">рейтинг: 8,9</p>
+               <p class="search-results__rating">рейтинг: <span class="search-results__rating-number">8,9</span></p>
             </li>
             <li class="search-results__item">
                <img src="img/catalog/hotel-3.jpg" width="300" alt="206" alt="" class="search-results__image">
@@ -214,7 +222,7 @@
                <a href="#" class="search-results__button-card brown-button">Подробнее</a>
                <a href="#" class="search-results__button-card green-button">В избранном</a>
                <p class="search-results__stars"><span class="visually-hidden">2 звезды</span></p>
-               <p class="search-results__rating">рейтинг: 9,2</p>
+               <p class="search-results__rating">рейтинг: <span class="search-results__rating-number">9,2</span></p>
             </li>
             <li class="search-results__item">
                <img src="img/catalog/hotel-4.jpg" width="300" alt="206" alt="" class="search-results__image">
@@ -224,7 +232,7 @@
                <a href="#" class="search-results__button-card brown-button">Подробнее</a>
                <a href="#" class="search-results__button-card cold-button">В избранное</a>
                <p class="search-results__stars"><span class="visually-hidden">2 звезды</span></p>
-               <p class="search-results__rating">рейтинг: 9,2</p>
+               <p class="search-results__rating">рейтинг: <span class="search-results__rating-number">9,2</span></p>
             </li>
          </ul>
 
