@@ -11,13 +11,13 @@
 <body>
     <header class="page-header">
         <div class="wrapper">
-            <nav class="navigation">
-                <a href="index.html" class="navigation-logo">
+            <nav class="page-header__navigation">
+                <a href="index.html" class="page-header__navigation-logo">
                     <img src="img/head_logo.svg" width="139" height="70" alt="Седона" class="page-header__logo">
                 </a>
-                <ul class="page-headerlist">
+                <ul class="page-header__navigation-list">
                     <li class="page-header__navigation-item">
-                        <a href="index.html" class="page-header__navigation-link navigation-link-current">
+                        <a href="index.html" class="page-header__navigation-link page-header__navigation-link-current">
                             Главная
                         </a>
                     </li>
@@ -32,7 +32,7 @@
                         </a>
                     </li>
                 </ul>
-                <ul class="page-header__navigation-list navigation-user">
+                <ul class="page-header__navigation-list page-header__navigation-user">
                     <li class="page-header__navigation-item">
                         <a href="#" class="page-header__navigation-link">
                             <span class="visually-hidden">Поиск</span>
@@ -62,69 +62,70 @@
             <section class="welcome-banner">
                 <h2 class="visually-hidden welcome-banner__title">Приветственный банер</h2>
                 <div class="welcome-banner__image-text">
-                    <p><img src="" alt="Добро пожаловать"></p>
-                    <p><img src="" alt="в великолепную Седону"></p>
-                    <p><img src="" alt="Седона, потому что Гранд-каньон отстой"></p>
+                    <img src="" alt="Добро пожаловать">
+                    <img src="" alt="в великолепную Седону">
+                    <img src="" alt="Седона, потому что Гранд-каньон отстой">
                 </div>
+                <p class="welcome-banner__strong-text">
+                    <b>Седона — небольшой городок в Аризоне,<br>заслуживающий большего!</b>
+                </p>
+                <p class="welcome-banner__text">
+                    Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!
+                </p>
             </section>
 
             <section class="advantages">
                 <h2 class="visually-hidden advantages__title">Наши преимущества</h2>
-                <p class="advantages__strong-text">
-                    <b>Седона — небольшой городок в Аризоне,<br>заслуживающий большего!</b>
-                </p>
-                <p class="advantages__text">
-                    Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!
-                </p>
                 <ol class="advantages__list">
-                    <li class="advantages__card">
-                        <div class="cold-light-card">
+                    <li class="advantages__cold-light-card">
+                        <div class="advantages__card">
                             <h3 class="advantages__card-title">Настоящий городок</h3>
-                            <p class="advantages__card-text">— №1 —</p>
+                            <p class="advantages__card-number">— №1 —</p>
                             <p class="advantages__card-text">Седона — не аттракцион для туристов, там течёт своя жизнь
                             </p>
-                            <img class="advantages__image" src="img/photo-1.jpg" width="800" height="384"
-                                alt="Городской пейзаж">
                         </div>
-                        <ul class="advantages__items">
-                            <li class="advantages__card">
-                                <h3 class="advantages__card-title">Жильё</h3>
-                                <p class="advantages__card-text">Рекомендуем пожить в настоящем мотеле, всё как в кино!
-                                </p>
-                            </li>
-                            <li class="advantages__card">
-                                <h3 class="advantages__card-title">Еда</h3>
-                                <p class="advantages__card-text">Всегда заказывайте топовый фирменный бургер, вы не
-                                    разочаруетесь!</p>
-                            </li>
-                            <li class="advantages__card">
-                                <h3 class="advantages__card-title">Сувениры</h3>
-                                <p class="advantages__card-text">Не только китайского, но и настоящего местного
-                                    производства!
-                                </p>
-                            </li>
-                        </ul>
+                        <img class="advantages__image" src="img/photo-1.jpg" width="800" height="384"
+                            alt="Городской пейзаж">
                     </li>
-                    <li class="advantages__card cold-light-card">
-                        <h3 class="advantages__card-title">Там есть мост дьявола</h3>
-                        <p class="advantages__card-text">— №2 —</p>
-                        <p class="advantages__card-text">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+                    <li class="advantages__card advantages__card-light-accent">
+                        <h3 class="advantages__card-title">Жильё</h3>
+                        <p class="advantages__card-text">Рекомендуем пожить в настоящем мотеле, всё как в кино!
+                        </p>
+                    </li>
+                    <li class="advantages__card">
+                        <h3 class="advantages__card-title">Еда</h3>
+                        <p class="advantages__card-text">Всегда заказывайте топовый фирменный бургер, вы не
+                            разочаруетесь!</p>
+                    </li>
+                    <li class="advantages__card advantages__card-light-accent">
+                        <h3 class="advantages__card-title">Сувениры</h3>
+                        <p class="advantages__card-text">Не только китайского, но и настоящего местного
+                            производства!
+                        </p>
+                    </li>
+                    <li class="advantages__cold-light-card">
                         <img class="advantages__image" src="img/photo-2.jpg" width="800" height="384"
                             alt="Мост дьявола - природный каменный мост">
+                        <div class="advantages__card">
+                            <h3 class="advantages__card-title">Там есть мост дьявола</h3>
+                            <p class="advantages__card-number">— №2 —</p>
+                            <p class="advantages__card-text">Да, по нему можно пройти! Если вы осмелитесь, разумеется
+                            </p>
+                        </div>
                     </li>
-                    <li class="advantages__card">
+                    <li class="advantages__card advantages__card-light-accent">
                         <h3 class="advantages__card-title">Небольшая площадь</h3>
-                        <p class="advantages__card-text">— №3 —</p>
+                        <p class="advantages__card-number">— №3 —</p>
                         <p class="advantages__card-text">Все достопримечательности находятся очень близко</p>
                     </li>
-                    <li class="advantages__card">
+                    <li class="advantages__card advantages__card-dark-accent">
                         <h3 class="advantages__card-title">Красивая дорога</h3>
-                        <p class="advantages__card-text">— №4 —</p>
+                        <p class="advantages__card-number">— №4 —</p>
                         <p class="advantages__card-text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
                     </li>
-                    <li class="advantages__card">
+                    <li class="advantages__card advantages__card-light-accent">
                         <h3 class="advantages__card-title">Мало туристов</h3>
-                        <p class="advantages__card-text">— №5 —</p>
+                        <p class="advantages__card-number">— №5 —</p>
                         <p class="advantages__card-text">Большинство едет в Гранд Каньон и толпится там</p>
                     </li>
                 </ol>
@@ -145,17 +146,19 @@
 
 
             <section class="newsletter">
-                <h2 class="newsletter__title">Подпишитесь на рассылку</h2>
-                <p class="newsletter__text">Только полезная информация и никакого спама, честное бойскаутское!</p>
-                <form class="newsletter__form" action="https://echo.htmlacademy.ru/" method="post"
-                    name="newsletter-form">
-                    <label class="visually-hidden" for="newsletter-email">Ваш e-mail:</label>
-                    <input class="newsletter__email" type="email" name="newsletter-email" id="newsletter-email"
-                        placeholder="Ваш e-mail">
-                    <button class="newsletter__button cold-button" type="submit">
-                        <span class="newsletter__button-text">Подписаться</span>
-                    </button>
-                </form>
+                <div class="newsletter__conteiner">
+                    <h2 class="newsletter__title">Подпишитесь на рассылку</h2>
+                    <p class="newsletter__text">Только полезная информация и никакого спама, честное бойскаутское!</p>
+                    <form class="newsletter__form" action="https://echo.htmlacademy.ru/" method="post"
+                        name="newsletter-form">
+                        <label class="visually-hidden" for="newsletter-email">Ваш e-mail:</label>
+                        <input class="newsletter__email" type="email" name="newsletter-email" id="newsletter-email"
+                            placeholder="Ваш e-mail">
+                        <button class="newsletter__button cold-button" type="submit">
+                            <span class="newsletter__button-text">Подписаться</span>
+                        </button>
+                    </form>
+                </div>
             </section>
         </div>
 
