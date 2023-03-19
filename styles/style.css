@@ -290,21 +290,45 @@ body {
 }
 
 .main-catalog__title {
+  padding: 0;
+  margin: 0 0 5px 0;
   font-weight: 700;
   font-size: 60px;
   line-height: 78px;
 }
 
 .main-catalog__navigation-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 0;
+  margin: 0 0 45px 0;
+  list-style-type: none;
   font-size: 16px;
   line-height: 21px;
 }
 
+.main-catalog__navigation-link {
+  margin: 0 25px 0 0;
+  padding: 0;
+  color: #ffffff;
+  height: 12px;
+  width: 12px;
+  text-decoration: none;
+}
+
 .filter-container {
-  padding: 0 70px;
+  padding: 35px 70px 85px 70px;
   background: url("../img/catalog-background.jpg") center/cover no-repeat;
   background-color: #83B3D3;
   color: #ffffff;
+}
+
+.catalog-filter__title {
+  margin: 0;
+  padding: 0;
 }
 
 .catalog-filter__form {
@@ -367,11 +391,16 @@ body {
   display: block;
   margin: 0 auto;
   width: 160px;
+  height: 60px;
 }
 
 .control-input {
   font-size: 18px;
   line-height: 23px;
+}
+
+.search-results {
+  margin: 0 0 30px 0;
 }
 
 .search-results__list {
@@ -456,6 +485,12 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .pagonation__container {
@@ -465,13 +500,33 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 0 0 0;
 }
 
-.pagonation-link {
+.pagonation__item {
+  margin: 0 8px 0 0;
+}
+
+.pagonation__link {
   font-weight: 700;
   font-size: 20px;
   line-height: 26px;
   text-transform: uppercase;
+  max-height: 55px;
+  width: 55px;
+  display: block;
+  text-align: center;
+  padding: 12px 0 12px 0;
+}
+
+.newsletter-no-background {
+  padding: 73px 0 73px 0;
+  background-image: url();
+  background-repeat: no-repeat;
+  color: #000000;
 }
 
 .page-footer {
